@@ -1,0 +1,24 @@
+
+#outer {
+    width: 576px; /*for 32x32 grid, this width/divdiv width needs to be 32*/
+    height: 576px; /*for 32x32 grid, this height/divdiv height needs to be 32*/
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#outer div {
+    width: 18px;
+    height: 18px;
+    outline: 1px solid;
+    color: #d3d3d3; /*light gray*/
+    float: left;
+}
+
+.alive{
+	background-color:green;
+}
+
+.dead{
+	background-color:black;
+}
+
