@@ -11,7 +11,7 @@ var Controller = function(view){
 	view.setPresetNames(presetNames);
 
 	view.setClickHandler(function(index){
-		onInitialBoardClick(index); //explain this
+		onInitialBoardClick(index); 
 	});
 
 	view.setPlayButton(function(){

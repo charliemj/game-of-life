@@ -66,7 +66,7 @@ var View = function(buttonLayer){ //the View will render content in the #buttonL
 			}// end else
 			outer.children().last().on('click',function(){
 				index = $(this).index();
-				that.clickHandler(index); //explain this
+				that.clickHandler(index); 
 			});
 		}); //end of board.forEach (this repopulates board)	
 	}//end of updateBoard
