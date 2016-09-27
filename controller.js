@@ -11,7 +11,7 @@ var Controller = function(view){
 	view.setPresetNames(presetNames);
 
 	view.setClickHandler(function(index){
-		onInitialBoardClick(index); 
+		onInitialBoardClick(index); //tells the view what to do when a click happens (call onInitialBoardClick for each index)
 	});
 
 	view.setPlayButton(function(){
