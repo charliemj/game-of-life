@@ -43,7 +43,7 @@ var View = function(buttonLayer){ //the View will render content in the #buttonL
 
 	setClickHandler = function(clickHandler){//handles game tile clicks
 		that.clickHandler = clickHandler;
-	}//end setClickHandler
+	};//end setClickHandler
 
 	//adds the pause button to the HTML and allows clicking
 	buttonLayer.prepend('<button id="pause">Pause</button>').children().first().on('click',function(){ 
@@ -59,7 +59,7 @@ var View = function(buttonLayer){ //the View will render content in the #buttonL
 		outer.empty(); //clears all the divs (the board) in the outer div
 		board.forEach(function(game_tile){
 			if (game_tile === 0){ //sets the div to "dead"
-				outer.append('<div class="dead"></div>')
+				outer.append('<div class="dead"></div>');
 			}//end if
 			else{//it is a 1 and alive
 				outer.append('<div class="alive"></div>');
@@ -69,10 +69,10 @@ var View = function(buttonLayer){ //the View will render content in the #buttonL
 				that.clickHandler(index); //take HTML (game tile) and when clicked, it figures out current index and sends it to the clickhandler
 			});
 		}); //end of board.forEach (this repopulates board)	
-	}//end of updateBoard
+	}; //end of updateBoard
 
 	
 	//expose functions
 	return {"setPresetChange":setPresetChange,"setPresetNames":setPresetNames,"updateBoard": updateBoard, 
 			"setClickHandler":setClickHandler, "setPlayButton":setPlayButton, "setPauseButton":setPauseButton};
-}//end of View
+};//end of View
